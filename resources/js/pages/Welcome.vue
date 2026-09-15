@@ -51,18 +51,43 @@ import PublicLayout from "@/components/PublicLayout.vue";
                 </div>
             </div>
         </section>
-        <section class="grid gap-6 border-y border-teal-100 py-12 md:grid-cols-[1.05fr_.95fr] md:items-stretch md:py-14">
-            <figure class="overflow-hidden rounded-3xl bg-white shadow-sm ring-1 ring-teal-100">
-                <img
-                    src="/media/sp-prevention.jpg"
-                    alt="Suicide prevention awareness poster about warning signs, support, and hope"
-                    class="h-full min-h-80 w-full object-cover object-top"
-                />
-                <figcaption class="px-6 py-4 text-sm leading-6 text-slate-600 sm:px-7">
-                    Awareness starts with noticing, listening, and helping someone find support.
-                </figcaption>
-            </figure>
-            <div class="flex flex-col justify-between rounded-3xl bg-[#e2f0eb] p-6 text-teal-950 ring-1 ring-teal-100 sm:p-8">
+        <section class="border-y border-teal-100 py-12 md:py-14">
+            <div class="grid gap-6 md:grid-cols-[1.05fr_.95fr] md:items-center">
+                <figure class="overflow-hidden rounded-3xl bg-white shadow-sm ring-1 ring-teal-100">
+                    <img
+                        src="/media/sp-prevention.jpg"
+                        alt="Suicide prevention awareness poster about warning signs, support, and hope"
+                        class="max-h-168 w-full object-contain object-top"
+                    />
+                    <figcaption class="px-6 py-4 text-sm leading-6 text-slate-600 sm:px-7">
+                        Awareness starts with noticing, listening, and helping someone find support.
+                    </figcaption>
+                </figure>
+                <div class="rounded-3xl bg-[#f3ead8] p-7 text-teal-950 sm:p-9">
+                    <p class="eyebrow text-teal-800">Suicide Prevention Month</p>
+                    <h2 class="mt-4 text-3xl font-semibold tracking-tight text-slate-900">
+                        Every conversation can make room for hope.
+                    </h2>
+                    <p class="mt-5 leading-7 text-slate-700">
+                        This month is a reminder to learn the warning signs, challenge the stigma,
+                        and make it easier for people to ask for support. Prevention is a shared
+                        responsibility, and care can begin with simply listening.
+                    </p>
+                    <div class="mt-6 border-t border-amber-900/15 pt-5">
+                        <p class="font-semibold text-teal-950">A small way to take part:</p>
+                        <p class="mt-2 leading-7 text-slate-700">
+                            Check in with someone, share a trusted resource, or let a person know
+                            they do not have to face a difficult moment alone.
+                        </p>
+                    </div>
+                    <Link href="/awareness" class="text-link mt-7"
+                        >Learn the warning signs <ArrowRight class="size-4"
+                    /></Link>
+                </div>
+            </div>
+        </section>
+        <section class="py-12 md:py-14">
+            <div class="rounded-3xl border-t-4 border-teal-800 bg-teal-50 p-6 text-teal-950 shadow-sm ring-1 ring-teal-100 sm:p-8 md:p-10">
                 <div>
                     <p class="text-sm font-bold tracking-[0.16em] text-teal-800 uppercase">
                         Watch and reflect
@@ -75,19 +100,35 @@ import PublicLayout from "@/components/PublicLayout.vue";
                         support yourself or someone you care about.
                     </p>
                 </div>
-                <div class="mt-8 flex flex-col items-center justify-center rounded-2xl bg-teal-100/80 p-3 shadow-inner sm:p-4">
-                    <video
-                        class="aspect-9/16 max-h-144 w-full max-w-[20rem] rounded-xl bg-teal-950 object-contain shadow-lg ring-1 ring-teal-200"
-                        controls
-                        preload="metadata"
-                        aria-label="Suicide prevention awareness video"
-                    >
-                        <source src="/media/sp-video.mp4" type="video/mp4" />
-                        Your browser does not support the video element.
-                    </video>
-                    <p class="mt-3 text-lg text-center text-sm font-semibold tracking-[0.16em] text-teal-900">
-                        <strong> -MJ</strong>
-                    </p>
+                <div class="mt-8 grid gap-5 rounded-2xl border border-teal-100 bg-white/90 p-4 shadow-sm sm:p-5 md:grid-cols-2">
+                    <div class="flex flex-col items-center">
+                        <video
+                            class="aspect-9/16 w-full max-w-60 rounded-xl bg-teal-950 object-contain shadow-md ring-1 ring-teal-200"
+                            controls
+                            preload="metadata"
+                            aria-label="Suicide prevention awareness video"
+                        >
+                            <source src="/media/sp-video.mp4" type="video/mp4" />
+                            Your browser does not support the video element.
+                        </video>
+                        <p class="mt-3 text-center text-sm font-semibold tracking-[0.16em] text-teal-900">
+                            -MJ
+                        </p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <video
+                            class="aspect-9/16 w-full max-w-60 rounded-xl bg-teal-950 object-contain shadow-md ring-1 ring-teal-200"
+                            controls
+                            preload="metadata"
+                            aria-label="Additional suicide prevention awareness video"
+                        >
+                            <source src="/media/sp-video2.mp4" type="video/mp4" />
+                            Your browser does not support the video element.
+                        </video>
+                        <p class="mt-3 text-center text-sm font-semibold tracking-[0.16em] text-teal-900">
+                            -CHRESSEL
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
